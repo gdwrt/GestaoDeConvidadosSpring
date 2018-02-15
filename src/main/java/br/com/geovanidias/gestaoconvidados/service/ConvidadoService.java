@@ -10,12 +10,12 @@ import br.com.geovanidias.gestaoconvidados.repository.Convidados;
 @Service
 public class ConvidadoService {
 	
-	@Autowired
+	@Autowired // Injeta repository
 	private Convidados convidados;
 	
 	@Transactional
 	public Convidado adicionar(Convidado convidado) {
-		//Adiciona as regras de negócio
+		//Aqui adiciona as regras de negócio
 		
 		return convidados.saveAndFlush(convidado);
 	}
