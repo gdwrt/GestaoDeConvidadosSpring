@@ -15,6 +15,8 @@ public class ConvidadoService {
 	
 	@Transactional
 	public Convidado adicionar(Convidado convidado) {
+		//Adiciona as regras de negócio
+		
 		return convidados.saveAndFlush(convidado);
 	}
 	
